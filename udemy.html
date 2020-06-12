@@ -1,0 +1,58 @@
+<html> 
+<body> 
+	<script> 
+		let object = {
+			name: "Santi",
+			age: "25",
+			shout: function(){
+				return 2*2;
+			}
+		};
+
+		let list = ["hola", "mira", "papa", "jeje"];
+
+		// let b = 3;
+
+
+		// function suma(b){
+		// 	d = b + 2;
+		// 	return b;
+		// };
+
+		// console.log(suma(b));
+
+		// console.log(d); //devuelve que "d" no esta definido! xq? no es global?
+
+		// console.log(suma(b)); //devuelve 3
+
+		// console.log(b); //devuelve 3
+
+		// let c = 3;
+
+		// function suma2(){
+		// 	c = c + 2;
+		// };
+
+		// suma2();
+
+		// console.log(c) //devuelve 5
+
+ 		
+		let y = 5;					// y es global, pero puede sufrir cambios dentro de una funcion.
+		function suma3 (f){			//estoy declarando a f dentro de la funcion entonces no es global, en cambio g si!
+			f = f + 3;
+			g = 32;
+			y = 8;
+		};
+
+		suma3(15);
+		console.log(g);
+		console.log(y);
+		console.log(f);
+
+		
+		
+	</script> 
+</body> 
+
+</html>							 
